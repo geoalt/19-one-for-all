@@ -58,7 +58,7 @@ CREATE DATABASE SpotifyClone;
 
 
   CREATE TABLE SpotifyClone.playback_history_table(
-    -- id INT PRIMARY KEY AUTO_INCREMENT,
+    id INT PRIMARY KEY AUTO_INCREMENT,
     user_id INT NOT NULL,
     song_id INT NOT NULL,
     historic_date DATETIME NOT NULL,
@@ -84,15 +84,15 @@ INSERT INTO SpotifyClone.artists_table(artist) VALUES
 
 INSERT INTO SpotifyClone.users_table(user, age, plan_id, signature_date) VALUES
   ('Barbara Liskov', 82, 1, '2019-10-20'),
-	('Robert Cecil Martin', 58, 1, '2017-01-06'),
-  ('Ada Lovelace', 37, 2, '2017-12-30'),
-  ('Martin Fowler',46, 2, '2017-01-17'),
-  ('Sandi Metz',58, 2, '2018-04-29'),
-  ('Paulo Freire',19, 3, '2018-02-14'),
-	('Bell Hooks',26, 3, '2018-01-05'),
-	('Christopher Alexander',85, 4, '2019-06-05'),
-	('Judith Butler',45, 4, '2020-05-13'),
-	('Jorge Amado',58, 4, '2017-02-17');
+  ('Robert Cecil Martin', 58, 1, '2017-01-06'),
+  ('Ada Lovelace', 37, 4, '2017-12-30'),
+  ('Martin Fowler',46, 4, '2017-01-17'),
+  ('Sandi Metz',58, 4, '2018-04-29'),
+  ('Paulo Freire',19, 2, '2018-02-14'),
+  ('Bell Hooks',26, 2, '2018-01-05'),
+  ('Christopher Alexander',85, 3, '2019-06-05'),
+  ('Judith Butler',45, 3, '2020-05-13'),
+  ('Jorge Amado',58, 3, '2017-02-17');
 
 INSERT INTO SpotifyClone.albums_table(album, artist_id, release_year) VALUES
   ('Renaissance', 1, 2022),
@@ -101,11 +101,11 @@ INSERT INTO SpotifyClone.albums_table(album, artist_id, release_year) VALUES
   ('Falso Brilhante', 3, 1998),
   ('Vento de Maio', 3, 2001),
   ('QVVJFA?', 4, 2003),
-	('Somewhere Far Beyond', 6, 2007),
-	('I Put A Spell On You', 5, 2012);
+  ('Somewhere Far Beyond', 6, 2007),
+  ('I Put A Spell On You', 5, 2012);
 
 INSERT INTO SpotifyClone.songs_table(song, length_seg, album_id) VALUES
-	('BREAK MY SOUL', 279, 1),
+  ('BREAK MY SOUL', 279, 1),
   ('VIRGOS GROOVE', 369, 1),
   ('ALIEN SUPERSTAR', 116, 1),
   ('Don’t Stop Me Now', 203, 2),
