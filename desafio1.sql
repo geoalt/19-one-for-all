@@ -106,7 +106,7 @@ INSERT INTO SpotifyClone.albums_table(album, artist_id, release_year) VALUES
 
 INSERT INTO SpotifyClone.songs_table(song, length_seg, album_id) VALUES
   ('BREAK MY SOUL', 279, 1),
-  ('VIRGOS GROOVE', 369, 1),
+  ('VIRGO’S GROOVE', 369, 1),
   ('ALIEN SUPERSTAR', 116, 1),
   ('Don’t Stop Me Now', 203, 2),
   ('Under Pressure', 152, 2),
