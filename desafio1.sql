@@ -58,11 +58,11 @@ CREATE DATABASE SpotifyClone;
 
 
   CREATE TABLE SpotifyClone.playback_history_table(
-    id INT PRIMARY KEY AUTO_INCREMENT,
     user_id INT NOT NULL,
     song_id INT NOT NULL,
     historic_date DATETIME NOT NULL,
 
+    CONSTRAINT PRIMARY KEY(user_id, song_id),
     FOREIGN KEY(user_id) REFERENCES users_table(id),
     FOREIGN KEY(song_id) REFERENCES songs_table(id)
   ) engine = InnoDB;
